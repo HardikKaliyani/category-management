@@ -26,8 +26,8 @@ describe('AuthService', () => {
     });
 
     const userData = {
-        name: 'Test User',
-        email: 'test@example.com',
+        name: 'John',
+        email: 'john@gmail.com',
         password: 'Password123'
     };
 
@@ -93,7 +93,7 @@ describe('AuthService', () => {
 
         it('should throw error when email does not exist', async () => {
             const loginData = {
-                email: 'nonexistent@example.com',
+                email: 'notexists@email.com',
                 password: userData.password
             };
 

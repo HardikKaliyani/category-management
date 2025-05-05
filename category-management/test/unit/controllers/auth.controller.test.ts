@@ -32,8 +32,8 @@ describe('AuthController', () => {
         it('should register a new user successfully', async () => {
             // Arrange
             const mockUserData = {
-                name: 'Test User',
-                email: 'test@example.com',
+                name: 'John Doe',
+                email: 'john@gmail.com',
                 password: 'Password123'
             };
 
@@ -41,8 +41,8 @@ describe('AuthController', () => {
                 token: 'mockToken',
                 user: {
                     id: 'mockUserId',
-                    name: 'Test User',
-                    email: 'test@example.com'
+                    name: 'John Doe',
+                    email: 'john@gmail.com'
                 }
             };
 
@@ -87,7 +87,7 @@ describe('AuthController', () => {
         it('should login user successfully', async () => {
             // Arrange
             const mockLoginData = {
-                email: 'test@example.com',
+                email: 'john@gmail.com',
                 password: 'Password123'
             };
 
@@ -95,8 +95,8 @@ describe('AuthController', () => {
                 token: 'mockToken',
                 user: {
                     id: 'mockUserId',
-                    name: 'Test User',
-                    email: 'test@example.com'
+                    name: 'John Doe',
+                    email: 'john@gmail.com'
                 }
             };
 
@@ -141,8 +141,8 @@ describe('AuthController', () => {
             // Arrange
             const mockUser = {
                 _id: 'mockUserId',
-                name: 'Test User',
-                email: 'test@example.com'
+                name: 'John Doe',
+                email: 'john@gmail.com'
             };
 
             (authService.getUserById as jest.Mock).mockResolvedValue(mockUser);
